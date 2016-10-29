@@ -1,0 +1,93 @@
+<!--
+ /*
+//****************************************************/
+// Filename: del_item.html
+// Created By: Amit Pathania,Manjunath K, Goutam
+// Creation Date: 23-10-2016
+// Purpose/Description:  To create html pge for deleting item into menu
+// Functions: None
+//Global Variables: None
+/****************************************************/
+-->
+
+
+
+<!DOCTYPE html>
+
+<html>
+<title>AUTO SERVING BOT</title>
+<meta charset="utf-8">
+<link rel="icon" href="images/favicon.ico">
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/slider.css">
+<center>
+<script type="text/javascript">
+
+  function display_alert()
+ {
+   
+    var x = document.forms["form1"]["item"].value;
+    if (x == null || x == "") {
+        alert("Please enter the item to be deleted");
+        return false;
+
+    }
+
+  alert("ITEM DELETED");
+ }
+
+</script>
+
+
+<style>
+#form1 {
+ border: 1px solid black;
+    background:url(images.jpg), url(images1.jpg);
+    background-position: right top, left top;
+    background-repeat: no-repeat;
+    padding:15px;
+}
+</style>
+
+<body>
+
+<div class="main">
+  <header>
+    <div class="container_12">
+      <div class="grid_12">
+        <h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
+        <div class="menu_block">
+          <nav>
+            <ul class="sf-menu">
+              <li ><a href="index.html">Home</a></li>
+              <li ><a href="get_menu_3.php">Menu</a></li>
+              <li ><a href="place_order.php">Place order</a></li>
+              <li class="current" class="with_ul" ><a href="order_view_counter.php"> Admin Zone</a>
+                <ul>
+                  <li><a href="add_item.html">Add item</a></li>
+                  <li><a href="del_item.html">Delete item</a></li>
+                  <li><a href="order_view_counter.php">Manage orders</a></li>
+                </ul>
+                </li>
+              
+              <li><a href="contacts.html">Contact us</a></li>
+            </ul>
+          </nav>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </header>
+<h3>
+<form id="form1" action="del_item.php" onsubmit="return display_alert()" method="post">
+<h2> ENTER ITEM TO BE DELETED </h2><br>
+Name: <input type="text" name="item"><br><br>
+<input type="submit" value ="DELETE ITEM"><br>
+</form>
+</h3>
+</center>
+</div>
+</body>
+</html>

@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    * Author List: L.Goutam
+    * Filename: activity_menu_selection.xml
+    * Theme: Auto-Serving Bot - eYRC Specific
+-->
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.autobot.foodbuddy.MenuSelection">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        >
+
+        <TextView
+            android:text="Menu"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_weight="50"
+                android:text="Table No"
+                android:textSize="30dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_width="wrap_content" />
+
+            <Spinner
+                android:layout_weight="50"
+                android:id="@+id/TableNumberSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+            </Spinner>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            >
+            <TextView
+                android:id="@+id/i1"
+                android:layout_weight="60"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Veg. Biryani"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_weight="20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs. 120/-"
+                android:textSize="18sp" />
+
+            <EditText
+                android:hint="0"
+                android:id="@+id/q1"
+                android:layout_weight="20"
+                android:ems="3"
+                android:maxLength="3"
+                android:layout_width="3dp"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            >
+            <TextView
+                android:id="@+id/i4"
+                android:layout_weight="60"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shahi Paneer Biryani"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_weight="20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs. 150/-"
+                android:textSize="18sp" />
+
+            <EditText
+                android:hint="0"
+                android:id="@+id/q4"
+                android:layout_weight="20"
+                android:ems="3"
+                android:maxLength="3"
+                android:layout_width="3dp"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            >
+            <TextView
+                android:id="@+id/i12"
+                android:layout_weight="60"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dal Makhni"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_weight="20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs. 80/-"
+                android:textSize="18sp" />
+
+            <EditText
+                android:hint="0"
+                android:id="@+id/q12"
+                android:layout_weight="20"
+                android:ems="3"
+                android:maxLength="3"
+                android:layout_width="3dp"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            >
+            <TextView
+                android:id="@+id/i13"
+                android:layout_weight="60"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Murg Dum Biryani"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_weight="20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs. 200/-"
+                android:textSize="18sp" />
+
+            <EditText
+                android:hint="0"
+                android:id="@+id/q13"
+                android:layout_weight="20"
+                android:ems="3"
+                android:maxLength="3"
+                android:layout_width="3dp"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            >
+            <TextView
+                android:id="@+id/i14"
+                android:layout_weight="60"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chicken Tikka Biryani"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_weight="20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs. 250/-"
+                android:textSize="18sp" />
+
+            <EditText
+                android:hint="0"
+                android:id="@+id/q14"
+                android:layout_weight="20"
+                android:ems="3"
+                android:maxLength="3"
+                android:layout_width="3dp"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            >
+            <TextView
+                android:id="@+id/i15"
+                android:layout_weight="60"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Butter Naan"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_weight="20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs. 25/-"
+                android:textSize="18sp" />
+
+            <EditText
+                android:hint="0"
+                android:id="@+id/q15"
+                android:layout_weight="20"
+                android:ems="3"
+                android:maxLength="3"
+                android:layout_width="3dp"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            >
+            <TextView
+                android:id="@+id/i16"
+                android:layout_weight="60"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tandoori Roti"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_weight="20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs. 15/-"
+                android:textSize="18sp" />
+
+            <EditText
+                android:hint="0"
+                android:id="@+id/q16"
+                android:layout_weight="20"
+                android:ems="3"
+                android:maxLength="3"
+                android:layout_width="3dp"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            >
+            <TextView
+                android:id="@+id/i17"
+                android:layout_weight="60"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paneer do pyaaza"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_weight="20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs. 180/-"
+                android:textSize="18sp" />
+
+            <EditText
+                android:hint="0"
+                android:id="@+id/q17"
+                android:layout_weight="20"
+                android:ems="3"
+                android:maxLength="3"
+                android:layout_width="3dp"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            >
+            <TextView
+                android:id="@+id/i18"
+                android:layout_weight="60"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paneer masala"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_weight="20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs. 88/-"
+                android:textSize="18sp" />
+
+            <EditText
+                android:hint="0"
+                android:id="@+id/q18"
+                android:layout_weight="20"
+                android:ems="3"
+                android:maxLength="3"
+                android:layout_width="3dp"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            >
+            <TextView
+                android:id="@+id/i19"
+                android:layout_weight="60"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gulab Jamun"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_weight="20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs. 20/-"
+                android:textSize="18sp" />
+
+            <EditText
+                android:hint="0"
+                android:id="@+id/q19"
+                android:layout_weight="20"
+                android:ems="3"
+                android:maxLength="3"
+                android:layout_width="3dp"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            >
+            <TextView
+                android:id="@+id/i20"
+                android:layout_weight="60"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rice"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_weight="20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs. 60/-"
+                android:textSize="18sp" />
+
+            <EditText
+                android:hint="0"
+                android:id="@+id/q20"
+                android:layout_weight="20"
+                android:ems="3"
+                android:maxLength="3"
+                android:layout_width="3dp"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            >
+            <TextView
+                android:id="@+id/i21"
+                android:layout_weight="60"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Boondi Raita"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_weight="20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs. 80/-"
+                android:textSize="18sp" />
+
+            <EditText
+                android:hint="0"
+                android:id="@+id/q21"
+                android:layout_weight="20"
+                android:ems="3"
+                android:maxLength="3"
+                android:layout_width="3dp"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            >
+            <TextView
+                android:id="@+id/i22"
+                android:layout_weight="60"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Curd"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_weight="20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs. 50/-"
+                android:textSize="18sp" />
+
+            <EditText
+                android:hint="0"
+                android:id="@+id/q22"
+                android:layout_weight="20"
+                android:ems="3"
+                android:maxLength="3"
+                android:layout_width="3dp"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </LinearLayout>
+
+
+        <Button
+            android:text="Place Order"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/placeOrderButton"
+            android:elevation="0dp" />
+
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

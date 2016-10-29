@@ -1,0 +1,36 @@
+<!--
+    * Author List: L.Goutam
+    * Filename: strings.xml
+    * Theme: Auto-Serving Bot - eYRC Specific
+-->
+<resources>
+    <string name="app_name">Food Buddy</string>
+
+    <string name="title_activity_menu_list">MenuList</string>
+    <string name="large_text">
+        <b>"Auto-Serving Bot"</b> \n"
+        "We automate the serving process in a restaurant
+        and this can be used to serve orders at the customer table. \n"
+        "The robot also accommodates best features like find the shortest route to the counter while
+        satisfying maximum number of customers en route, obstacle detection and collision avoidance,
+        rerouting dynamically based on the dynamic nature of incoming requests.
+        Multiple ASBs can also be used to improve customer service and share workloads among bots.
+        The bots also communicate among themselves to provide best efficient service. The robots use white line following
+        technique to reach counter or desired table and ZigBee for communication with each other and with the counter \n"
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_server_ip">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+</resources>

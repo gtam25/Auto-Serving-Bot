@@ -1,0 +1,15 @@
+<!--
+    * Author List: L.Goutam
+    * Filename: menu_menu_list.xml
+    * Theme: Auto-Serving Bot - eYRC Specific
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.autobot.foodbuddy.MenuList">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+</menu>

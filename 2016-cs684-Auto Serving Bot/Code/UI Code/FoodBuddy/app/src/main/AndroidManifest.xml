@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    * Author List: L.Goutam
+    * Filename: AndroidManifest.xml
+    * Theme: Auto-Serving Bot - eYRC Specific
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.autobot.foodbuddy">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher2"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Main Activity which is launched when app is opened -->
+        <activity android:name=".ServerIpActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <!--
+            ATTENTION: This was auto-generated to add Google Play services to your project for
+            App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- Add all the activities we use to this MANIFEST file -->
+        <activity android:name=".HomeScreen" />
+        <activity android:name=".MenuSelection" />
+        <activity android:name=".ContactDetails" />
+        <activity android:name=".About" />
+
+    </application>
+
+</manifest>

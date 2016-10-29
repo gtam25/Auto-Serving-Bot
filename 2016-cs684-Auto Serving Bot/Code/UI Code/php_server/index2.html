@@ -1,0 +1,172 @@
+<!--
+ /*
+//****************************************************/
+// Filename: add_item.html
+// Created By: Amit Pathania,Manjunath K, Goutam
+// Creation Date: 23-10-2016
+// Purpose/Description:  To create html page for admin.It is similar to main home page but contain admin view for viewing and managing orders, adding and removing items from the menu
+// Functions: None
+//Global Variables: None
+/****************************************************/
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>AUTO SERVING BOT</title>
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/slider.css">
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.1.1.js"></script>
+<script src="js/superfish.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/sForm.js"></script>
+<script src="js/jquery.carouFredSel-6.1.0-packed.js"></script>
+<script src="js/tms-0.4.1.js"></script>
+<script>
+$(window).load(function () {
+    $('.slider')._TMS({
+        show: 0,
+        pauseOnHover: false,
+        prevBu: '.prev',
+        nextBu: '.next',
+        playBu: false,
+        duration: 800,
+        preset: 'fade',
+        pagination: true, //'.pagination',true,'<ul></ul>'
+        pagNums: false,
+        slideshow: 8000,
+        numStatus: false,
+        banners: false,
+        waitBannerAnimation: false,
+        progressBar: false
+    })
+});
+$(window).load(function () {
+    $('.carousel1').carouFredSel({
+        auto: false,
+        prev: '.prev',
+        next: '.next',
+        width: 960,
+        items: {
+            visible: {
+                min: 1,
+                max: 4
+            },
+            height: 'auto',
+            width: 240,
+        },
+        responsive: false,
+        scroll: 1,
+        mousewheel: false,
+        swipe: {
+            onMouse: false,
+            onTouch: false
+        }
+    });
+});
+</script>
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<link rel="stylesheet" media="screen" href="css/ie.css">
+<![endif]-->
+</head>
+<body>
+<div class="main">
+  <header>
+    <div class="container_12">
+      <div class="grid_12">
+        <h1><a href="index.html"><img src="images/logo.png" alt="" ></a></h1>
+        <div class="menu_block">
+          <nav>
+            <ul class="sf-menu">
+              <li class="current"><a href="index.html">Home</a></li>
+              <li><a href="get_menu_3.php">Menu</a></li>
+              <li><a href="place_order.php">Place order</a></li>
+              <li class="with_ul" ><a href="order_view_counter.php"> Admin Zone</a>
+                <ul>
+                  <li><a href="add_item.html">Add item</a></li>
+                  <li><a href="del_item.html">Delete item</a></li>
+                  <li><a href="order_view_counter.php">Manage orders</a></li>
+              </ul>
+                </li>
+              
+              <li><a href="contacts.html">Contact us</a></li>
+            </ul>
+          </nav>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </header>
+  <div class="slider-relative">
+    <div class="slider-block">
+      <div class="slider">
+        <ul class="items">
+          <li><img src="images/slide.jpg" alt=""></li>
+          <li><img src="images/slide1.jpg" alt=""></li>
+          <li class="mb0"><img src="images/slide2.jpg" alt=""></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="content page1">
+    <div class="container_12">
+      <div class="grid_7">
+        <h2>Welcome</h2>
+        <div class="page1_block col1"> <img src="images/welcome_img.png" alt="">
+          <div class="extra_wrapper">
+            <p><span class="col2">Welcome to India's first fully automated restaurant.“Auto-Serving Bot” is firebird robot which can automate the serving process in a restaurant and can be used to serve orders at the customer table.  </p>
+            The customer will use android app to place an order from table and the bots will be used to deliver the order on the table once order is prepared. <br>
+            </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+      <div class="grid_5">
+        <h2>Features</h2>
+        <ul class="list">
+          <li><a href="#">The diners at a restaurant will not have to deal with human errors from their waiters.  </a></li>
+          <li><a href="#">The customer experience is also enhanced with the reliability and flexibility of the bots. </a></li>
+          <li><a href="#">A Bot can never provoke or annoy a customer. It is always submissive. </a></li>
+          <li><a href="#">With its less maintenance cost and high reliability, these bots are highly superior to human waiters.</a></li>
+         
+        </ul>
+      </div>
+      <div class="clear"></div>
+      <div class="grid_12">
+        <div class="hor_separator"></div>
+      </div>
+      <div class="grid_12">
+        <div class="car_wrap">
+         
+      <div class="clear"></div>
+      <div class="bottom_block">
+        <div class="grid_6">
+          <h3>Follow Us</h3>
+          <div class="socials"> <a href="#"></a> <a href="#"></a> <a href="#"></a> </div>
+          <nav>
+            <ul>
+              <li class="current"><a href="index.html">Home</a></li>
+              <li><a href="get_menu_3.php">Menu</a></li>
+              <li><a href="place_order.php">Place order</a></li>
+              <li><a href="order_view_counter.php"> Admin Zone</
+              <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+          </nav>
+        </div>
+         </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="container_12">
+    <div class="clear"></div>
+  </div>
+</footer>
+</body>
+</html>

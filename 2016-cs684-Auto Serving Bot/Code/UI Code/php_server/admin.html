@@ -1,0 +1,91 @@
+<!--
+ /*
+//****************************************************/
+// Filename: admin.html
+// Created By: Amit Pathania,Manjunath K, Goutam
+// Creation Date: 23-10-2016
+// Purpose/Description:  To create html pge for getting username and password from admin to view admin page
+// Functions: None
+//Global Variables: None
+/****************************************************/
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>AUTO SERVING BOT | Admin</title>
+<meta charset="utf-8">
+<link rel="icon" href="images/favicon.ico">
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/form.css">
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<link rel="stylesheet" media="screen" href="css/ie.css">
+<![endif]-->
+</head>
+<body>
+<div class="main">
+  <header>
+    <div class="container_12">
+      <div class="grid_12">
+        <h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
+        <div class="menu_block">
+          <nav>
+            <ul class="sf-menu">
+              <li ><a href="index.html">Home</a></li>
+              <li><a href="get_menu_3.php">Menu</a></li>
+              <li><a href="place_order.php">Place order</a></li>
+              <li class="current" ><a href="order_view_counter.php"> Admin Zone</a>
+                <ul>
+                  <li><a href="add_item.html">Add item</a></li>
+                  <li><a href="del_item.html">Delete item</a></li>
+                  <li><a href="order_view_counter.php">Manage orders</a></li>
+                </ul>
+                </li>
+              
+              <li ><a href="contacts.html">Contact us</a></li>
+            </ul>
+          </nav>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </header>
+  <div class="content">
+    <div class="container_12">
+      <div class="grid_6">
+        <h2>ADMIN ZONE</h2>
+        <div class="map">
+       
+          <p>Please log in below</p> 
+<form   action="validate.php" method="post"> 
+<b>User ID:</b> 
+<br> <input type="text" size="20" name="userID">
+<br> <br> <b>Password:</b> 
+<br><input type="password" size="20" name="password"> <br>
+<br> <input type="submit" value="login"> </form>
+        </div>
+      </div>
+      
+        </form>
+      </div>
+      <div class="clear"></div>
+      <div class="bottom_block">
+        
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="container_12">
+   
+    <div class="clear"></div>
+  </div>
+</footer>
+</body>
+</html>

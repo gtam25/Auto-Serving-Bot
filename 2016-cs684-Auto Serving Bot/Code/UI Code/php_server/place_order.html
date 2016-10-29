@@ -1,0 +1,97 @@
+<!--
+ /*
+//****************************************************/
+// Filename: place_order.html
+// Created By: Amit Pathania,Manjunath K, Goutam
+// Creation Date: 23-10-2016
+// Purpose/Description:  To create html page from where suer can place new order
+// Functions: None
+//Global Variables: None
+/****************************************************/
+-->
+
+
+
+<!DOCTYPE html>
+
+<html>
+ <script>
+
+function display_alert()
+ {
+ alert("ORDER PLACED");
+ }
+ </script>
+<center>
+
+<head>
+<h1> SELECT YOUR ORDER </h1></head>
+<body>
+<h3>
+<form id="form1" action="place_order.php" method="post">
+<div align="center"><br>
+
+<?php
+
+/*
+ * Following code will list all menu items
+ */
+ 
+// array for JSON response
+$response = array();
+ 
+require_once __DIR__ . '/db_config.php';
+
+   // $servername = "localhost";
+   // $username = "root";
+   // $password = "";
+   // $dbname = "android_app";
+
+// Create connection
+$db = mysqli_connect(DB_SERVER, DB_USER, DB_PASSWORD,DB_DATABASE);
+// Check connection
+// Check connection
+if (!$db) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+ 
+// get all products from products table
+$sql="SELECT *FROM products";
+$result = mysqli_query($db,$sql);
+
+ 
+// check for empty result
+if (mysqli_num_rows($result) > 0) {
+    // looping through all results
+    // products node
+   
+    echo "<table id=t01>";
+    echo "<tr>";
+     echo "<th>ITEM ID</th><th>SELECT</th><th>ITEM NAME</th> <th>COST</th><th>DESCRIPTION</th>";
+     echo "</tr>";
+    while ($row = mysqli_fetch_assoc($result)) {
+        // temp user array
+        echo "<tr>";
+        echo "<td>".$row['pid']."</td>";
+        echo '<input type="checkbox" name='.$row['pid'].'>';
+        echo "<td>".$row['item']."</td>";
+        echo "<td>".$row['cost']."</td>";
+        echo "<td>".$row['description']."</td>";
+        echo "</tr>";
+    
+    }
+    echo "</table>";
+    mysqli_free_result($result);
+   }
+
+mysqli_close($db);
+
+?>
+ 
+<input type="submit" value ="CLICK TO PLACE ORDER" onclick="display_alert()"><br>
+</div>
+</form>
+</h3>
+</center>
+</body>
+</html>
